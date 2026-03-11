@@ -6,21 +6,24 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<h1>Simple Banking App</h1>
+    <h1>Simple Banking App</h1>
 
-<h2>Balance: ₹ <span id="balance">0</span></h2>
+    <h2>Balance: ₹ <span id="balance">0</span></h2>
 
-<input type="number" id="amount" placeholder="Enter amount">
+    <!-- === Add your input and buttons HERE === -->
+    <input type="number" id="amount" placeholder="Enter amount">
 
-<br><br>
+    <br><br>
 
-<button onclick="deposit()">Deposit</button>
-<button onclick="withdraw()">Withdraw</button>
+    <button onclick="deposit()">Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+    <button onclick="resetBalance()">Reset Balance</button>
+    <button onclick="showTransactions()">Show Transactions</button>
 
-<script src="script.js"></script>
+    <p id="transactions"></p>
 
+    <script src="script.js"></script>
 </body>
-</html>3
+</html>
